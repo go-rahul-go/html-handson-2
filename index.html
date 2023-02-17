@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>FORMS</h2>
+    <form action="./index2.html" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter name here" required autofocus>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="enter email here" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="enter password here" required>
+        <br><br>
+        <p>Select Language</p>
+        <input type="radio" id="react" name="language" value="react">
+        <label for="react">React</label>
+        <br>
+        <input type="radio" id="angular" name="language" value="angular">
+        <label for="angular">Angular</label>
+        <br>
+        <input type="radio" id="vue" name="language" value="vue">
+        <label for="vue">Vue</label>
+        <br><br>
+        <p>Select Course</p>
+        <input type="checkbox" id="mern" name="course1" value="MERN" required>
+        <label for="mern" title="mongoDB, ExpressJS, React, NodeJS">MERN</label>
+        <br>
+        <input type="checkbox" id="mean" name="course2" value="MEAN" required>
+        <label for="mean" title="MongoDB, ExpressJS, Angular, NodeJS">MEAN</label>
+        <br>
+        <input type="checkbox" id="mevn" name="course3" value="MEVN">
+        <label for="mevn" title="MongoDB, ExpressJS, VueJS, NodeJS">MEVN</label>
+        <br><br>
+        <label for="field">Field:</label><br>
+        <select name="course" id="field">
+            <option value="frontend">Front End</option>
+            <option value="backend">Back End</option>
+            <option value="fullstack">Full Stack</option>
+        </select>
+        <br><br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits mobile number" required style="width:15vw;">  
+        <button type="submit" title="submit this form">Submit</button>
+
+    </form>
+    <h2>TABLES</h2>
+    <a href="./index3.html" title="click here to see tables pagel" target="_self">click here</a>
+</body>
+</html>
